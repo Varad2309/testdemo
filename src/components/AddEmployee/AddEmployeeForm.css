@@ -1,0 +1,105 @@
+/* Universal box-sizing for consistency */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* General container for the form */
+.form-container {
+  max-width: 600px;
+  margin: 65px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(227, 162, 10, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Title styling */
+.form-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  color: #333;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Row layout for form groups */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual form group styling */
+.form-group {
+  flex: 1 1 calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #666;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  height: 45px; /* Corrected input height */
+}
+
+/* Floating effect on input focus */
+input:focus,
+select:focus {
+  border-color: #ff4b2b;
+  box-shadow: 0 0 8px rgba(255, 75, 43, 0.3);
+  outline: none;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Button container styling */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* Button styling */
+.Add-employee-button {
+  flex: 1;
+  padding: 12px;
+  background-color: #ff4b2b;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  height: 50px;
+}
+
+/* Hover effect for buttons */
+.Add-employee-button:hover {
+  background-color: #e60023;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

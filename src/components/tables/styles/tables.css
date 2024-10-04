@@ -1,0 +1,105 @@
+.course-table {
+    width: 95%;
+    margin: 20px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+    
+.course-table th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    background-color: #ff8c00;
+    color: white;
+    font-weight: bold;
+}
+  
+.course-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    background-color: #fdfdfd;
+}
+  
+.employee-selection {
+    margin:0px 20px;
+    padding: 15px;
+    width: 95%;
+    background-color: #fffaf0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.employee-select {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 8px;
+}
+  
+  /* Button Group Styling */
+.button-group {
+    margin:10px 20px;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+  
+.submit-button {
+    background-color: #ff8c00;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+  
+.submit-button:hover {
+    background-color: #e67e00;
+    transform: translateY(-2px);
+}
+  
+.reset-button {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+  
+.reset-button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+}
+  
+.course-table input[type="checkbox"] {
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    outline: none;
+}
+  
+.duration-select .select__menu {
+    z-index: 9999; /* Ensure the dropdown is above other content */
+    max-height: 200px; /* Adjust based on your layout */
+}
+
+.employee-select .select__menu {
+    z-index: 9999; /* Ensure the dropdown is above other content */
+    max-height: 200px; /* Adjust based on your layout */
+}
+  
+ 
+  
+  
+  

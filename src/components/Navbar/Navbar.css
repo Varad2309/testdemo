@@ -1,0 +1,123 @@
+/* Main navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid #ddd; /* Subtle bottom border */
+  padding: 0 40px; /* Increased padding for more space */
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em; /* Increased font size for better readability */
+  position: sticky; /* Keeps the navbar fixed at the top */
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo styling */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-img {
+  height: 50px; /* Adjusted height to fit better in the navbar */
+  cursor: pointer; /* Cursor pointer to indicate clickable logo */
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+/* Navbar link styling */
+.navbar-link {
+  text-decoration: none;
+  margin: 0 25px; /* Increased space between items */
+  cursor: pointer; /* Pointer cursor for interactive items */
+  color: #333; /* Text color for regular items */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+  font-weight: 500; /* Standard font weight */
+}
+
+.navbar-link:hover {
+  color: #ff5733; /* Hover effect with orange color */
+}
+
+/* Dropdown styling */
+.navbar-dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.navbar-dropdown-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 8px; /* Space between text and arrow */
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #333; /* Arrow color */
+  transition: transform 0.3s ease; /* Smooth transition for arrow rotation */
+}
+
+.navbar-dropdown-menu {
+  display: none; /* Hide dropdown menu by default */
+  position: absolute; /* Absolute positioning */
+  top: 100%; /* Position below the dropdown trigger */
+  left: -90px; /* Align with the dropdown trigger */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 10px 0;
+  list-style: none;
+  min-width: 250px; /* Minimum width for consistent dropdown size */
+  z-index: 1000; /* Ensure dropdown is above other content */
+}
+
+.navbar-dropdown-item {
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #333; /* Regular text color */
+  text-decoration: none; /* Remove underline from links */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar-dropdown-item:hover {
+  border-radius: 4px;
+  background-color: #ff5733; /* Orange hover background */
+  color: white; /* White text on hover */
+}
+
+/* Logout icon styling */
+.logout-icon {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #333; /* Regular text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.logout-icon:hover {
+  background-color: #ff5733; /* Orange hover background */
+  color: white; /* White text on hover */
+}
+
+/* Show the dropdown and rotate the arrow when open */
+.navbar-dropdown.open .navbar-dropdown-arrow {
+  transform: rotate(180deg); /* Rotate arrow for expanded state */
+}
+
+.navbar-dropdown.open .navbar-dropdown-menu {
+  display: block; /* Show dropdown menu when open */
+}

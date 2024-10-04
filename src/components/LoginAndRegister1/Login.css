@@ -1,0 +1,142 @@
+/* General Page Style */
+.login-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4; /* Light grey background */
+}
+
+/* Container for the login form and image */
+.login-container {
+    display: flex;
+    width: 75%;
+    height: 70%;
+ 
+    background: transparent; /* No background color for the container */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2); /* Box shadow for elevation effect */
+    border-radius: 10px; /* Rounded corners for the container */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+/* Left side of the container (can be used for an image or other content) */
+.login-left {
+    width: 50%;
+    height: 100%;
+
+    /* background-color: orange; */
+    background-image:url('login-img.jpg');
+    background-position: center; /* Center the background image */
+    background-size: cover; /* Cover the entire element */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+    color: white; /* White text color for contrast */
+    text-align: center; /* Center text alignment */
+    padding: 20px; /* Add padding around the text */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    position: relative; /* Position relative for the pseudo-element */
+}
+
+/* Add a semi-transparent overlay to improve text readability */
+.login-left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+    z-index: -1; /* Place it behind the text */
+}
+
+/* Heading style in left section */
+.login-left h1 {
+    font-size: 2.5rem; /* Adjusted font size for better readability */
+    margin-bottom: 20px; /* Space below the heading */
+    line-height: 1.5; /* Line height for better text spacing */
+}
+
+/* Paragraph text style in left section */
+.login-left p {
+
+    font-size: 1.125rem; /* Slightly larger font size for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0 20px; /* Add padding on the left and right */
+    line-height: 1.5; /* Line height for better text spacing */
+}
+
+/* Right side of the container (form and login elements) */
+.login-right {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+/* Heading style */
+.login-right h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #ff5722; /* Orange color */
+}
+
+/* Style for input fields */
+.login-right input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ff5722; /* Orange border color */
+    border-radius: 5px;
+    background: #fff; /* White background color */
+    font-size: 16px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease; /* Smooth transition for border color on focus */
+}
+
+/* Input focus effect */
+.login-right input:focus {
+    border-color: #e64a19; /* Darker orange border color on focus */
+}
+
+/* Style for the login button */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ff5722; /* Orange background color */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.login-button:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}
+
+/* Style for the signup prompt */
+.signup-prompt {
+    font-size: 14px;
+    color: #333; /* Dark grey color for text */
+}
+
+/* Style for the signup link */
+.signup-link {
+    color: #ff5722; /* Orange color for the signup link */
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline; /* Underline effect for the link */
+}

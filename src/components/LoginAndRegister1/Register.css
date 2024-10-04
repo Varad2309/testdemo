@@ -1,0 +1,171 @@
+/* General Page Style */
+.register-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4; /* Light grey background */
+}
+
+/* Container for the registration form and image */
+.register-container {
+    display: flex;
+    width: 90%;
+    height: 95%; /* Increase height for better form accommodation */
+    background: #fff; /* White background for the container */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2); /* Box shadow for elevation effect */
+    border-radius: 10px; /* Rounded corners for the container */
+    overflow: hidden;
+}
+
+/* Left side of the container (image and text) */
+.register-left {
+    width: 50%;
+    height: 100%;
+    background-image: url('signup-img.jpg');
+    background-position: center; /* Center the background image */
+    background-size: cover; /* Cover the entire element */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+    color: white; /* White text color for contrast */
+    text-align: center; /* Center text alignment */
+    padding: 40px; /* Add padding around the text */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    position: relative; /* Position relative for the pseudo-element */
+}
+
+/* Add a semi-transparent overlay to improve text readability */
+.register-left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+    z-index: -1; /* Place it behind the text */
+}
+
+/* Heading style in left section */
+.register-left h1 {
+    font-size: 2.5rem; /* Adjusted font size for better readability */
+    margin-bottom: 20px; /* Space below the heading */
+    line-height: 1.2; /* Line height for better text spacing */
+}
+
+/* Paragraph text style in left section */
+.register-left p {
+    font-size: 1.125rem; /* Slightly larger font size for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 0 20px; /* Add padding on the left and right */
+    line-height: 1.5; /* Line height for better text spacing */
+}
+
+/* Right side of the container (form and registration elements) */
+.register-right {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Heading style */
+.register-right h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Style for form rows to arrange fields in two columns */
+.form-row {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    gap: 50px; /* Space between columns */
+    width: 100%;
+}
+
+/* Style for form groups (labels and inputs) */
+.form-group {
+    width: 50%; /* Adjust width to fit two columns */
+    margin-bottom: 20px; /* Space between form fields */
+    text-align: left; /* Left-align labels */
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+/* Style for input fields and selects */
+.register-right input,
+.register-right select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ff5722; /* Orange border color */
+    border-radius: 5px;
+    background: #fff; /* White background color */
+    font-size: 16px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease; /* Smooth transition for border color on focus */
+}
+
+.register-right input:focus,
+.register-right select:focus {
+    border-color: #e64a19; /* Darker orange border color on focus */
+}
+
+/* Style for the register button */
+.register-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ff5722; /* Orange background color */
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Space above the button */
+}
+
+/* Button hover effect */
+.register-button:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}
+
+/* Style for the error and success messages */
+.error-message,
+.success-message {
+    color: red; /* Default color for error message */
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.success-message {
+    color: green; /* Color for success message */
+}
+
+/* Style for the login prompt */
+.login-prompt {
+    font-size: 14px;
+    color: #333; /* Dark grey color for text */
+    margin-top: 20px; /* Space above the prompt */
+}
+
+/* Style for the login link */
+.login-link {
+    color: #ff5722; /* Orange color for the login link */
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline; /* Underline effect for the link */
+}
